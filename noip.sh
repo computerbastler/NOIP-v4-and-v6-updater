@@ -1,5 +1,3 @@
-als system dienst umbauen
-
 #!/bin/bash
 USERNAME="input username"
 PASSWORD="input password"
