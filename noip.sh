@@ -9,7 +9,7 @@ INTERFACE="input Networkinterface"
 
 # Get initial IP address
 IP4=$(curl -s http://checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')
-IP6=$(ip -6 addr show dev enp2s0 | awk '/inet6/ {print $2}' | cut -d/ -f1 | head -n 1)
+IP6=$(ip -6 addr show dev $INTERFACE | awk '/inet6/ {print $2}' | cut -d/ -f1 | head -n 1)
 
 while true; do
   # Get current IP address
