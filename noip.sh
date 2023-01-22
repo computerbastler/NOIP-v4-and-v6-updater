@@ -29,4 +29,3 @@ while true; do
   # Sleep for 30 seconds before next IP check
   sleep 30
 done
-
