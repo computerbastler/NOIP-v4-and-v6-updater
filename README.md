@@ -6,4 +6,5 @@ the service file muss edit and to /etc/systemd/system/
 and run comand 
 
 sudo systemctl enable noip.service
+
 sudo systemctl start noip.service
