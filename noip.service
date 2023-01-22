@@ -1,0 +1,10 @@
+[Unit]
+Description=NOIP Updater Service
+
+[Service]
+User=root
+ExecStart=/path/to/noip.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
